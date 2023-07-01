@@ -1,9 +1,9 @@
 package com.alkomprar.stepDefinitions;
 
-import com.alkomprar.steps.CuentaStep;
+import com.alkomprar.steps.registro.CuentaStep;
 import com.alkomprar.steps.HomeStep;
-import com.alkomprar.steps.RegistroStep;
-import com.alkomprar.steps.ValidacionCorreoStep;
+import com.alkomprar.steps.registro.RegistroStep;
+import com.alkomprar.steps.registro.ValidacionCorreoStep;
 import io.cucumber.java.es.*;
 import net.thucydides.core.annotations.Steps;
 

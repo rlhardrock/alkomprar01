@@ -1,5 +1,6 @@
-package com.alkomprar.pages;
+package com.alkomprar.pages.registro;
 
+import com.alkomprar.utils.HabilitarCheckbox;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.*;

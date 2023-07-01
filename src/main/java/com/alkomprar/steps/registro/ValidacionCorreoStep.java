@@ -1,6 +1,6 @@
-package com.alkomprar.steps;
+package com.alkomprar.steps.registro;
 
-import com.alkomprar.pages.ValidacionCorreoPage;
+import com.alkomprar.pages.registro.ValidacionCorreoPage;
 import com.alkomprar.utils.Excel;
 import net.thucydides.core.annotations.Step;
 

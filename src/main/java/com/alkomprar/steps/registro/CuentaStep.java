@@ -1,7 +1,7 @@
-package com.alkomprar.steps;
+package com.alkomprar.steps.registro;
 
 import net.thucydides.core.annotations.Step;
-import com.alkomprar.pages.CuentaPage;
+import com.alkomprar.pages.registro.CuentaPage;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 

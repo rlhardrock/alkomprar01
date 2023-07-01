@@ -1,4 +1,4 @@
-package com.alkomprar.pages;
+package com.alkomprar.utils;
 
 
 import org.openqa.selenium.JavascriptExecutor;
