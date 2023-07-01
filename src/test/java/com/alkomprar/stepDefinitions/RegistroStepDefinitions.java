@@ -30,10 +30,10 @@ public class RegistroStepDefinitions {
 
     @Cuando("hago click en MiCuenta e ingreso la informacion solicitada en los formularios siguientes")
     public void completarFormularios() throws IOException {
-      /*  comenzar.clicMiCuenta();
+        comenzar.clicMiCuenta();
         validar.escribirCorreo();
         validar.confirmarCorreo();
-        registar.enviarNombre();
+       /*   registar.enviarNombre();
         registar.enviarApellido();
         registar.enviarMobil();
         registar.vistoAutorizar();
