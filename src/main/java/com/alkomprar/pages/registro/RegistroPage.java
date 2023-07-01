@@ -1,30 +1,11 @@
 package com.alkomprar.pages.registro;
 
-import com.alkomprar.utils.HabilitarCheckbox;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.By;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 public class RegistroPage extends PageObject {
-
-    WebDriver driver = new ChromeDriver();
-    HabilitarCheckbox checkbox = new HabilitarCheckbox();
-
-    @FindBy(id = "registerChkTermsConditions")
-    private WebElement checkboxElement;
-
-    public RegistroPage() {
-        this.driver = driver;
-        checkbox = new HabilitarCheckbox();
-    }
-
-    public By habilitarCheckbox() {
-        checkbox.habilitarCheckbox(checkboxElement);
-        return null;
-    }
-
 
     By txtNombre = By.id("register.firstName");
 
@@ -33,6 +14,9 @@ public class RegistroPage extends PageObject {
     By txtMobil = By.id("register.mobileNumber");
 
     By btnRegistrar = By.className("js-btn-register-myaccount");
+
+    By cbeAutorizacion = By.xpath("//input[@type='checkbox' and @id='registerChkTermsConditions']");
+
 
     public By getTxtNombre() {
         return txtNombre; }
@@ -47,4 +31,12 @@ public class RegistroPage extends PageObject {
     public By getBtnRegistrar() {
         return btnRegistrar;
     }
+
+    public void hacerClicCheckbox() {
+        WebElement checkbox = getDriver().findElement(cbeAutorizacion);
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) getDriver();
+        jsExecutor.executeScript("arguments[0].removeAttribute('disabled')", checkbox);
+        checkbox.click();
+    }
+
 }

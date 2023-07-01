@@ -31,14 +31,16 @@ public class RegistroStep {
         credenciales.getDriver().findElement(credenciales.getTxtMobil()).sendKeys(informacionPersonal.get(0).get("numero"));
     }
 
-    @Step()
-    public void autorizar(){
-        credenciales.getDriver().findElement(credenciales.habilitarCheckbox()).click();
+    @Step
+    public void vistoAutorizar(){
+        credenciales.hacerClicCheckbox();
     }
 
     @Step()
     public void registrar(){
         credenciales.getDriver().findElement(credenciales.getBtnRegistrar()).click();
     }
+
+
 
 }
