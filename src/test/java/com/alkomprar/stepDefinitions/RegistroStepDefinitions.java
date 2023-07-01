@@ -33,10 +33,10 @@ public class RegistroStepDefinitions {
         comenzar.clicMiCuenta();
         validar.escribirCorreo();
         validar.confirmarCorreo();
-       /*   registar.enviarNombre();
+        registar.enviarNombre();
         registar.enviarApellido();
         registar.enviarMobil();
-        registar.vistoAutorizar();
+        /*   registar.vistoAutorizar();
         registar.registrar();*/
     }
 
