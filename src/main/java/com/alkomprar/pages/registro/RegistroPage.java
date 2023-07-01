@@ -3,7 +3,10 @@ package com.alkomprar.pages.registro;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class RegistroPage extends PageObject {
 
@@ -14,9 +17,6 @@ public class RegistroPage extends PageObject {
     By txtMobil = By.id("register.mobileNumber");
 
     By btnRegistrar = By.className("js-btn-register-myaccount");
-
-    By cbeAutorizacion = By.xpath("//input[@type='checkbox' and @id='registerChkTermsConditions']");
-
 
     public By getTxtNombre() {
         return txtNombre; }
@@ -32,11 +32,14 @@ public class RegistroPage extends PageObject {
         return btnRegistrar;
     }
 
+    By checkboxLocator = By.xpath("//input[@id='registerChkTermsConditions']");
+
     public void hacerClicCheckbox() {
-        WebElement checkbox = getDriver().findElement(cbeAutorizacion);
+        WebElement checkbox = getDriver().findElement(checkboxLocator);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) getDriver();
         jsExecutor.executeScript("arguments[0].removeAttribute('disabled')", checkbox);
-        checkbox.click();
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement(checkbox).click().perform();
     }
 
 }

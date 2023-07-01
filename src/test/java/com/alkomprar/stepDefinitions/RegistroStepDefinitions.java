@@ -36,8 +36,8 @@ public class RegistroStepDefinitions {
         registar.enviarNombre();
         registar.enviarApellido();
         registar.enviarMobil();
-        /*   registar.vistoAutorizar();
-        registar.registrar();*/
+        registar.vistoAutorizar();
+        /*registar.registrar();*/
     }
 
     @Entonces("visualizo el tablero de control MiCuenta")
