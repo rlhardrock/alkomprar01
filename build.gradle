@@ -47,7 +47,7 @@ test {
 
 serenity{
     testRoot="com.alkomprar.runners"
-    requirementsBaseDir=["src/test/resources/features/registro/"]
+    requirementsBaseDir=["src/test/resources/features/"]
     reports=["single-page-html"]
 }
 

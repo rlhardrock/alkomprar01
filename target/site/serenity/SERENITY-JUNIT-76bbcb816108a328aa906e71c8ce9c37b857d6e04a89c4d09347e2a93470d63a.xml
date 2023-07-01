@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Registro de usuario nuevo Alkomprar" skipped="0" tests="1" time="0.98" timestamp="2023-06-30 10:04:20"><testcase name="Registro Usuario en Alkomprar"><error type="java.lang.NullPointerException"/><system-err>null
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Registro de usuario nuevo Alkomprar" skipped="0" tests="1" time="1.39" timestamp="2023-07-01 09:55:58"><testcase name="Registro Usuario en Alkomprar"><error type="java.lang.NullPointerException"/><system-err>null
 io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
 io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
 io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)

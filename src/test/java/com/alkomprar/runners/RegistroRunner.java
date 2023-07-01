@@ -6,11 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/registro/",
+        features = "src/test/resources/features/",
         tags = "@RegistroExito",
         glue = "com.alkomprar.stepDefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
-        monochrome = true
+        snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 
 
