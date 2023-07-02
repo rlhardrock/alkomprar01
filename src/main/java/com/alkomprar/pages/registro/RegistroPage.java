@@ -3,10 +3,11 @@ package com.alkomprar.pages.registro;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class RegistroPage extends PageObject {
 
@@ -16,20 +17,20 @@ public class RegistroPage extends PageObject {
 
     By txtMobil = By.id("register.mobileNumber");
 
-    By btnRegistrar = By.className("js-btn-register-myaccount");
+    By btnRegistrar = By.xpath("//button[@class='button-primary btn-block js-btn-register-myaccount' and @type='submit']");
+
+    //  public By getBtnRegistrar() {  return btnRegistrar;     }
 
     public By getTxtNombre() {
-        return txtNombre; }
+        return txtNombre;
+    }
 
     public By getTxtApellido() {
         return txtApellido;
     }
 
     public By getTxtMobil() {
-        return txtMobil;  }
-
-    public By getBtnRegistrar() {
-        return btnRegistrar;
+        return txtMobil;
     }
 
     By checkboxLocator = By.xpath("//input[@id='registerChkTermsConditions']");
@@ -42,4 +43,9 @@ public class RegistroPage extends PageObject {
         actions.moveToElement(checkbox).click().perform();
     }
 
+    public void clicContinuar() {
+       WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+        WebElement button = wait.until(ExpectedConditions.elementToBeClickable(btnRegistrar));
+        button.click();
+    }
 }

@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-07-2023 18:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-07-2023 20:12</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,9 +195,9 @@ Para   ver y poder comprar articulos tecnologicos ofertados
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registro Usuario en Alkomprar
+                                <span class="error-color">Registro Usuario en Alkomprar
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,28 +214,63 @@ Para   ver y poder comprar articulos tecnologicos ofertados
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element click intercepted exception: element click intercepted: Element is not clickable at point (678, 667)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.alkomprar.pages.registro.RegistroPage.clicContinuar(RegistroPage.java:47)<br />com.alkomprar.steps.registro.RegistroStep.registrar(RegistroStep.java:47)<br />com.alkomprar.stepDefinitions.RegistroStepDefinitions.completarFormularios(RegistroStepDefinitions.java:40)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource708084289155072116.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="b7221ccee6539b18afda0bf260d773e5e219f5b783d234390257203aecf312d8.png" title=" Dado abro la pagina web Alkomprar" width="1366"/>
-                <img src="b7221ccee6539b18afda0bf260d773e5e219f5b783d234390257203aecf312d8.png" title=" Abrir navegador" width="1366"/>
-                <img src="b7221ccee6539b18afda0bf260d773e5e219f5b783d234390257203aecf312d8.png" title=" Dado abro la pagina web Alkomprar (completed)" width="1366"/>
+                <img src="8db042b9978d62585e8b2764009b6b55394b17d6bb6003748c2c3b9f1bebf6f5.png" title=" Dado abro la pagina web Alkomprar" width="1366"/>
+                <img src="8db042b9978d62585e8b2764009b6b55394b17d6bb6003748c2c3b9f1bebf6f5.png" title=" Abrir navegador" width="1366"/>
+                <img src="8db042b9978d62585e8b2764009b6b55394b17d6bb6003748c2c3b9f1bebf6f5.png" title=" Dado abro la pagina web Alkomprar (completed)" width="1366"/>
                 <img src="8db042b9978d62585e8b2764009b6b55394b17d6bb6003748c2c3b9f1bebf6f5.png" title=" Cuando hago click en MiCuenta e ingreso la informacion solicitada en los formularios siguientes" width="1366"/>
-                <img src="8db042b9978d62585e8b2764009b6b55394b17d6bb6003748c2c3b9f1bebf6f5.png" title=" Clic mi cuenta" width="1366"/>
-                <img src="a8732276962f590171e9a21761b8bc6118c55e425f37490dedd74e453b00ba8c.png" title=" Clic mi cuenta (completed)" width="1366"/>
-                <img src="a8732276962f590171e9a21761b8bc6118c55e425f37490dedd74e453b00ba8c.png" title=" Escribir correo" width="1366"/>
-                <img src="f8007ab9f88df8ddcf219ed846d633bd3ceeadd5aeca6db25b794e3eb5ef1a56.png" title=" Escribir correo (completed)" width="1366"/>
-                <img src="f8007ab9f88df8ddcf219ed846d633bd3ceeadd5aeca6db25b794e3eb5ef1a56.png" title=" Confirmar correo" width="1366"/>
-                <img src="cf797ffac34cc0d3c8a50b1fc883391c7a8d69c95dc30eebae40c545cfe27252.png" title=" Confirmar correo (completed)" width="1366"/>
-                <img src="69f8858ee03807bb8a1b1773b53cc65f662fad13497b85002641d89f0004b96e.png" title=" Enviar nombre" width="1366"/>
-                <img src="9395332096505e9bd4dd9d04bc150fe6698f6feb8a0a12576ce26b2ac46c300e.png" title=" Enviar nombre (completed)" width="1366"/>
-                <img src="9395332096505e9bd4dd9d04bc150fe6698f6feb8a0a12576ce26b2ac46c300e.png" title=" Enviar apellido" width="1366"/>
-                <img src="8b77669667a36c5808b30253c30381da2523ff12cbf4ee5f41bfa9f7b1df781d.png" title=" Enviar apellido (completed)" width="1366"/>
-                <img src="8b77669667a36c5808b30253c30381da2523ff12cbf4ee5f41bfa9f7b1df781d.png" title=" Enviar mobil" width="1366"/>
-                <img src="5cbdd1983d39859697c2ebeea7208ae17b16ff426461cd0ae3b1f29322fb4a6c.png" title=" Enviar mobil (completed)" width="1366"/>
-                <img src="5cbdd1983d39859697c2ebeea7208ae17b16ff426461cd0ae3b1f29322fb4a6c.png" title=" Visto autorizar" width="1366"/>
-                <img src="0f1eb44f848fb7c8692cd89b9f7e7741c9de76b7c93845b72d66cb9e4045aa3c.png" title=" Visto autorizar (completed)" width="1366"/>
-                <img src="0f1eb44f848fb7c8692cd89b9f7e7741c9de76b7c93845b72d66cb9e4045aa3c.png" title=" Cuando hago click en MiCuenta e ingreso la informacion solicitada en los formularios siguientes (completed)" width="1366"/>
-                <img src="eb1337561442c73bf617083d86403cad70f3de97c3e6e44dac1e3d5dddcce7e6.png" title=" Entonces visualizo el tablero de control MiCuenta: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="efc708011e2a9de70a314f09b13756b352e076cefddcdfe9806e071d61f28124.png" title=" Clic mi cuenta" width="1366"/>
+                <img src="efc708011e2a9de70a314f09b13756b352e076cefddcdfe9806e071d61f28124.png" title=" Escribir correo" width="1366"/>
+                <img src="028fb27f6e35290dcd3051512b933497215cdbddbd6a607c190244e45887790c.png" title=" Escribir correo (completed)" width="1366"/>
+                <img src="028fb27f6e35290dcd3051512b933497215cdbddbd6a607c190244e45887790c.png" title=" Confirmar correo" width="1366"/>
+                <img src="21dbe467d66d62bf3b958eca213f8fec7d1b1d0ca2e8711da8e5c83f691fef0f.png" title=" Confirmar correo (completed)" width="1366"/>
+                <img src="21dbe467d66d62bf3b958eca213f8fec7d1b1d0ca2e8711da8e5c83f691fef0f.png" title=" Enviar nombre" width="1366"/>
+                <img src="086b1f7ee5084b468c5dff0057d4e51d9fb1927f60fb94c9bd9df407ce6ebb42.png" title=" Enviar nombre (completed)" width="1366"/>
+                <img src="086b1f7ee5084b468c5dff0057d4e51d9fb1927f60fb94c9bd9df407ce6ebb42.png" title=" Enviar apellido" width="1366"/>
+                <img src="8b0714988c0ab53d0948ad7443a86239889591e9b6568e3b739d05aa61914aae.png" title=" Enviar apellido (completed)" width="1366"/>
+                <img src="8b0714988c0ab53d0948ad7443a86239889591e9b6568e3b739d05aa61914aae.png" title=" Enviar mobil" width="1366"/>
+                <img src="756e3cfeedc16b2cd7b1f8d7404bce6c62f42cdfba28c20aa1b0e61581c7f65f.png" title=" Enviar mobil (completed)" width="1366"/>
+                <img src="756e3cfeedc16b2cd7b1f8d7404bce6c62f42cdfba28c20aa1b0e61581c7f65f.png" title=" Visto autorizar" width="1366"/>
+                <img src="8d511b476f990e4d5894ad5ddd11ecf9a08b8f17044a4b906f1ab90e7052bb65.png" title=" Visto autorizar (completed)" width="1366"/>
+                <img src="8d511b476f990e4d5894ad5ddd11ecf9a08b8f17044a4b906f1ab90e7052bb65.png" title=" Registrar" width="1366"/>
+                <img src="ef99a0f4263ccee0a36fc0b90f598733888b3afe2e1d3203a7f55f34c2236bbb.png" title=" Registrar (completed): <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 

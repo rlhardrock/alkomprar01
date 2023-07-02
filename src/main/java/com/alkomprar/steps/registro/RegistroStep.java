@@ -36,11 +36,15 @@ public class RegistroStep {
         credenciales.hacerClicCheckbox();
     }
 
-    @Step()
+    /*
+    @Step
     public void registrar(){
         credenciales.getDriver().findElement(credenciales.getBtnRegistrar()).click();
+    }*/
+
+    @Step
+    public void registrar(){
+        credenciales.clicContinuar();
     }
-
-
 
 }

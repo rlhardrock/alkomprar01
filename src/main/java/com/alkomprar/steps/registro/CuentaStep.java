@@ -11,10 +11,8 @@ public class CuentaStep {
 
     @Step
     public void validarTitulo(){
-        Assert.assertThat(
-                "",
-                cuenta.getDriver().findElement(cuenta.getTtlCuenta()).isDisplayed(),
-                Matchers.is(true)
-        );
+        String tituloEsperado = "Mi cuenta";
+        String tituloActual = cuenta.getDriver().findElement(cuenta.getTtlCuenta()).getText();
+        Assert.assertEquals(tituloEsperado, tituloActual);
     }
 }

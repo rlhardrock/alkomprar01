@@ -37,12 +37,11 @@ public class RegistroStepDefinitions {
         registar.enviarApellido();
         registar.enviarMobil();
         registar.vistoAutorizar();
-        /*registar.registrar();*/
+        registar.registrar();
     }
 
     @Entonces("visualizo el tablero de control MiCuenta")
     public void vizualizarMiCuenta() {
-
-        //comparar.validarTitulo();
+        comparar.validarTitulo();
     }
 }

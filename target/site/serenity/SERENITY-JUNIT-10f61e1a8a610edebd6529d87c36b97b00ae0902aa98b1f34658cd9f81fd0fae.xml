@@ -1,1 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Registro de usuario nuevo Alkomprar" skipped="0" tests="1" time="61.95" timestamp="2023-07-01 06:41:07"><testcase name="Registro Usuario en Alkomprar"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Registro de usuario nuevo Alkomprar" skipped="0" tests="1" time="45.8" timestamp="2023-07-01 08:12:07"><testcase name="Registro Usuario en Alkomprar"><error message="element click intercepted: Element is not clickable at point (678, 667)&#10;  (Session info: chrome=114.0.5735.198)&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.31-2-MANJARO', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ae0722d53fe38c2485c416df7f65abcc, clickElement {id=3C37A05159B4C5900F5159CD0D38C589_element_111}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.ZaKCed}, goog:chromeOptions: {debuggerAddress: localhost:33429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33429/devtoo..., se:cdpVersion: 114.0.5735.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on LINUX (ae0722d53fe38c2485c416df7f65abcc)] -&gt; xpath: //button[@class='button-primary btn-block js-btn-register-myaccount' and @type='submit']]&#10;Session ID: ae0722d53fe38c2485c416df7f65abcc" type="org.openqa.selenium.ElementClickInterceptedException">element click intercepted: Element is not clickable at point (678, 667)
+  (Session info: chrome=114.0.5735.198)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.31-2-MANJARO', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae0722d53fe38c2485c416df7f65abcc, clickElement {id=3C37A05159B4C5900F5159CD0D38C589_element_111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.ZaKCed}, goog:chromeOptions: {debuggerAddress: localhost:33429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33429/devtoo..., se:cdpVersion: 114.0.5735.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (ae0722d53fe38c2485c416df7f65abcc)] -&gt; xpath: //button[@class='button-primary btn-block js-btn-register-myaccount' and @type='submit']]
+Session ID: ae0722d53fe38c2485c416df7f65abcc</error><system-err>element click intercepted: Element is not clickable at point (678, 667)
+  (Session info: chrome=114.0.5735.198)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.31-2-MANJARO', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae0722d53fe38c2485c416df7f65abcc, clickElement {id=3C37A05159B4C5900F5159CD0D38C589_element_111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.ZaKCed}, goog:chromeOptions: {debuggerAddress: localhost:33429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33429/devtoo..., se:cdpVersion: 114.0.5735.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (ae0722d53fe38c2485c416df7f65abcc)] -&gt; xpath: //button[@class='button-primary btn-block js-btn-register-myaccount' and @type='submit']]
+Session ID: ae0722d53fe38c2485c416df7f65abcc
+com.alkomprar.pages.registro.RegistroPage.clicContinuar(RegistroPage.java:47)
+com.alkomprar.steps.registro.RegistroStep.registrar(RegistroStep.java:47)
+com.alkomprar.stepDefinitions.RegistroStepDefinitions.completarFormularios(RegistroStepDefinitions.java:40)
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+io.cucumber.java.Invoker.invoke(Invoker.java:24)
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</system-err></testcase></testsuite>
